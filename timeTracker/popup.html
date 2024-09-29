@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Time Tracker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      width: 300px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <h1>Time Tracker</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Website</th>
+        <th>Time Spent (min)</th>
+      </tr>
+    </thead>
+    <tbody id="time-table"></tbody>
+  </table>
+  <script src="popup.js"></script>
+</body>
+</html>
