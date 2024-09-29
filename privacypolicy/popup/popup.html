@@ -14,40 +14,40 @@
 
         <div class="field">
             <label class="label">Status</label>
-            <span id="runningSpan" class="tag is-success">Running</span>
-            <span id="stoppedSpan" class="tag is-danger">Stopped</span>
+            <!-- Initially hide both and use JS to display the current status -->
+            <span id="runningSpan" class="tag is-success" style="display: none;">Running</span>
+            <span id="stoppedSpan" class="tag is-danger" style="display: none;">Stopped</span>
         </div>
     </div>
 
     <div class="container m-3">
-
         <div class="field">
             <label class="label">Location ID</label>
             <div class="select">
-                <select id="locationId"></select>
+                <select id="locationId">
+                    <option value="">Select location</option>
+                    <option value="balurghat">Balurghat</option>
+                    <option value="gangarampur">Gangarampur</option>
+                </select>
             </div>
-
             <p id="locationIdError" class="help is-danger" style="display: none;">Please select a valid location.</p>
         </div>
 
         <div class="field">
-            <label class="label">Start date</label>
+            <label class="label">Start Date</label>
             <div class="control">
                 <input type="date" class="input" id="startDate">
             </div>
-
             <p id="startDateError" class="help is-danger" style="display: none;">Please enter a valid start date.</p>
         </div>
 
         <div class="field">
-            <label class="label">End date</label>
+            <label class="label">End Date</label>
             <div class="control">
                 <input type="date" class="input" id="endDate">
             </div>
-
             <p id="endDateError" class="help is-danger" style="display: none;">Please enter a valid end date.</p>
         </div>
-
     </div>
 
     <div class="container m-3">
@@ -57,6 +57,7 @@
     <div class="container m-3">
         <button class="button is-danger is-fullwidth" id="stopButton">Stop</button>
     </div>
-    
+
 </body>
+<script src="popup.js"></script>
 </html>
