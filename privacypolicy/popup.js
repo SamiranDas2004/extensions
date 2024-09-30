@@ -24,11 +24,11 @@ document.addEventListener('DOMContentLoaded', () => {
           return;
         }
   
-        const { privacyPolicyUrl, isSafe } = response;
-  console.log(isSafe,'url' ,privacyPolicyUrl)
+        const { privacyPolicy, isSafe } = response;
+  console.log(isSafe,'url' ,privacyPolicy)
   
-        let privacyPolicyHTML = privacyPolicyUrl ?
-          `<p>Privacy Policy: <a href="${privacyPolicyUrl}" target="_blank">Read</a></p>` :
+        let privacyPolicyHTML = privacyPolicy ?
+          `<p>Privacy Policy: <a href="${privacyPolicy}" target="_blank">Read</a></p>` :
           '<p>Privacy Policy: Not found.</p>';
   
         let safetyStatus = isSafe ? 'Safe' : 'Unsafe';
