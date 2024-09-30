@@ -1,21 +1,23 @@
 {
     "manifest_version": 3,
-    "name": "Global Entry Drops",
-    "description": "Find global entry interviews that meet your selection criteria.",
+    "name": "Privacy and Safety Checker",
     "version": "1.0",
-    "action": {
-        "default_popup": "popup/popup.html"
-    },
-    "icons": {
-      
-    },
-    "background": {
-        "service_worker": "background.js",
-        "type": "module"
-    },
+    "description": "Provides information about the privacy policy and safety of the websites you visit.",
     "permissions": [
-        "storage",
-        "alarms",
-        "notifications"
-    ]
-}
+      "activeTab",
+      "scripting",
+      "storage"
+    ],
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_title": "Privacy and Safety Checker"
+     
+    }
+  }
+  
