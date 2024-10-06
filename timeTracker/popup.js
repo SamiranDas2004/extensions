@@ -14,7 +14,8 @@ function formatTime(ms) {
       const row = document.createElement("tr");
       const siteCell = document.createElement("td");
       const timeCell = document.createElement("td");
-  
+
+      
       siteCell.textContent = site;
       timeCell.textContent = formatTime(time);
   
