@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log(isSafe,'url' ,privacyPolicy)
   
         let privacyPolicyHTML = privacyPolicy ?
-          `<p>Privacy Policy: <a href="${privacyPolicy}" target="_blank">Read</a></p>` :
+          `<p>Privacy Policy: <a href="${privacyPolicy}" target="_blank">Check the Policy</a></p>` :
           '<p>Privacy Policy: Not found.</p>';
   
         let safetyStatus = isSafe ? 'Safe' : 'Unsafe';
